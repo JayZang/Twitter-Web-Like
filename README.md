@@ -1,7 +1,5 @@
 # twitter-clone
 
-[![build](https://travis-ci.org/JayZang/twitter-clone.svg?branch=master)](https://travis-ci.org/JayZang/twitter-clone)
-
 > This project is built using [Node](https://nodejs.org/en/) and [Vue](https://vuejs.org/).  
 > The target is learning Vue framework and technique of backend to implement a SPA website.  
 > All right of picture and sign is reserved for [Twitter](https://twitter.com/).  
@@ -266,3 +264,5 @@ Vue.component('your-component', {
   template: '<div v-if="user">{{ user.name }}</div>'
 })
 ```
+
+[![Run on Repl.it](https://repl.it/badge/github/Ravens0610/twitter-clone)](https://repl.it/github/Ravens0610/twitter-clone)
