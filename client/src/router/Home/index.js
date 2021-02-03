@@ -1,21 +1,21 @@
+import TopNavBar from '@/components/Bar/TopNavBar'
+import PersonalPost from '@/components/Home/Personal/'
+import PersonalFollower from '@/components/Home/Personal/Follower'
+import PersonalFollowing from '@/components/Home/Personal/Following'
+import DetailPostInfoComponent from '@/components/Post/DetailPostInfo'
+import store from '@/store'
 import Home from '@/View/Home'
 import PersonalHome from '@/View/Home/Personal'
 import UserHome from '@/View/Home/User'
 
-import TopNavBar from '@/components/Bar/TopNavBar'
-import PersonalPost from '@/components/Home/Personal/'
-import PersonalFollowing from '@/components/Home/Personal/Following'
-import PersonalFollower from '@/components/Home/Personal/Follower'
-import DetailPostInfoComponent from '@/components/Post/DetailPostInfo'
 
-import store from '@/store'
 
 export default [{
   path: '/',
   name: 'Home',
   component: Home,
   beforeEnter (to, from, next) {
-    // 已登入使用者渲染使用者首頁而非預設首頁
+    // The logged-in user renders the user homepage instead of the default homepage
     if (store.getters.isLogin) {
       return next({name: 'UserHome'})
     }

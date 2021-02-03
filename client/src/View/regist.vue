@@ -3,35 +3,35 @@
     <div class="RegistFormContainer">
       <div class="Wrapper">
         <div class="RegistText">
-          <span>建立你的帳戶</span>
+          <span>Create your account</span>
         </div>
         <div class="ErrHint alert alert-danger" v-if="errHint">
           {{ errHint }}
         </div>
         <div class="RegistInput">
           <div class="username">
-            <input type="text" v-model="name" placeholder="使用者名稱">
+            <input type="text" v-model="name" placeholder="Your name">
           </div>
           <div class="account">
-            <input type="text" v-model="account" placeholder="帳號">
+            <input type="text" v-model="account" placeholder="account">
           </div>
           <div class="password">
-            <input type="password" v-model="password" placeholder="密碼">
+            <input type="password" v-model="password" placeholder="password">
           </div>
           <div class="password-confirm">
-            <input type="password" v-model="password2" placeholder="密碼確認">
+            <input type="password" v-model="password2" placeholder="repeat password">
           </div>
         </div>
         <div class="Submit">
-          <button class="btn submit" type="button" @click="registEventHandler">註冊</button>
+          <button class="btn submit" type="button" @click="registEventHandler">Submit</button>
         </div>
       </div>
     </div>
     <div class="LoginHint">
       <div class="Wrapper">
         <div class="hint">
-          <span>已加入 ?</span>
-          <router-link to="/login">立即登入 »</router-link>
+          <span>Already member?</span>
+          <router-link to="/login">Log in now »</router-link>
         </div>
       </div>
     </div>

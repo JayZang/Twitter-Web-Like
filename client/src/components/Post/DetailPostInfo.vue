@@ -29,10 +29,10 @@
       </div>
       <div class="Status">
         <div class="CommentCount">
-          <span><span class="count">{{Post.comments.length}}</span> 個回覆</span>
+          <span><span class="count">{{Post.comments.length}}</span> Replies</span>
         </div>
         <div class="LikeCount">
-          <span><span class="count">{{Post.likes.length}}</span> 個喜歡</span>
+          <span><span class="count">{{Post.likes.length}}</span>Likes</span>
         </div>
         <div class="LikePersonImg">
           <router-link class="LikeUserLink" :to="`/${person.account}`" v-for="(person, index) in Post.likes" v-if="index < 10" :key="person._id">
@@ -43,8 +43,8 @@
       <div class="BoxReplyContainer" v-if="loginedUser">
         <img class="UserProfileImg" :src="loginedUser.profileImg">
         <div class="EditerContainer">
-          <div class="Editer" default-txt="推你的回覆" contenteditable @focus="editerFocusEventHandler" @blur="editerBlurEventHandler" @input="editerInputEventHandler"></div>
-          <button type="button" class="btn ReplyBtn" v-if="isEditerFocused" :disabled="!inputContent.length" @mousedown="replyBtnClickEventHandler">回覆</button>
+          <div class="Editer" default-txt="Tweet your reply" contenteditable @focus="editerFocusEventHandler" @blur="editerBlurEventHandler" @input="editerInputEventHandler"></div>
+          <button type="button" class="btn ReplyBtn" v-if="isEditerFocused" :disabled="!inputContent.length" @mousedown="replyBtnClickEventHandler">Reply</button>
         </div>
       </div>
       <div class="CommentsContainer">
@@ -109,23 +109,23 @@ export default {
       moment.updateLocale('zh-cn', {
         meridiem : function (hour, minute, isLowercase) {
           if (hour < 9) {
-            return "早上";
+            return "morning";
           } else if (hour < 11 && minute < 30) {
-            return "上午";
+            return "morning";
           } else if (hour < 13 && minute < 30) {
-            return "中午";
+            return "noon";
           } else if (hour < 18) {
-            return "下午";
+            return "in the afternoon";
           } else {
-            return "晚上";
+            return "at night";
           }
         }
       });
 
-      return date => moment(date).format('a h:m - YYYY年M月D日')
+      return date => moment(date).format('a h:m - YYYYYear M Month D')
     },
     RegCommentDate() {
-      return date => moment(date).format('YYYY年M月D日')
+      return date => moment(date).format('YYYYYear M Month D')
     },
     loginedUser: function () {
       return this.$store.state.Auth.user || null

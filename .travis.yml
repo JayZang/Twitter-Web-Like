@@ -3,7 +3,7 @@ services: docker
 before_install:
   - docker-compose up -d
 
-# api-server 單元測試
+# api-server 
 script: docker-compose -f docker-compose.test.yml up
 
 after_script:

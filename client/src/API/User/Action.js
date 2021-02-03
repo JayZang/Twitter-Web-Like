@@ -1,6 +1,6 @@
+import store from '@/store'
 import axios from 'axios'
 
-import store from '@/store'
 
 async function follow (userId) {
   let res
@@ -17,7 +17,7 @@ async function follow (userId) {
   } catch (e) {
     return {
       result: false,
-      errMsg: '無法連接伺服器'
+      errMsg: 'Unable to connect to server'
     }
   }
 
@@ -39,7 +39,7 @@ async function deleteFollow (userId) {
   } catch (e) {
     return {
       result: false,
-      errMsg: '無法連接伺服器'
+      errMsg: 'Unable to connect to server'
     }
   }
 

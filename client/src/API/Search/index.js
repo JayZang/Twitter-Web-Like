@@ -1,6 +1,6 @@
+import store from '@/store'
 import axios from 'axios'
 
-import store from '@/store'
 
 async function searchUsers(queryTxt) {
   let token = store.getters.authToken
@@ -19,7 +19,7 @@ async function searchUsers(queryTxt) {
   } catch (e) {
     return {
       result: false,
-      errMsg: '無法連接伺服器'
+      errMsg: 'Unable to connect to server'
     }
   }
 }

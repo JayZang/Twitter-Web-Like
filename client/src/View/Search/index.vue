@@ -8,7 +8,7 @@
       <div class="QueryTypesWrapper">
         <div class="TypesList">
           <div class="TypesItem active">
-            人們
+            people
           </div>
         </div>
       </div>
@@ -19,7 +19,7 @@
         <PeopleBox :personList="personList" columnCount="3"/>
       </div>
       <div class="NoData" v-if="loaded && !personList.length">
-        無搜尋結果
+        No search results
       </div>
     </div>
   </div>
@@ -60,7 +60,7 @@ export default {
       this.loaded = true
 
       if (!res.result) {
-        this.errorMessage = '糟糕，發生了一些錯誤！'
+        this.errorMessage = 'Oops, something went wrong!'
         console.log(res)
         return
       }

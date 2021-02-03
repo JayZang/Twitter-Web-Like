@@ -1,6 +1,6 @@
-import axios from 'axios'
+import store from '@/store';
+import axios from 'axios';
 
-import store from '@/store'
 
 async function SendPost (request) {
   let res;
@@ -17,7 +17,7 @@ async function SendPost (request) {
   } catch (e) {
     return {
       result: false,
-      errMsg: '無法連接伺服器'
+      errMsg: 'Unable to connect to server'
     }
   }
 
@@ -38,7 +38,7 @@ async function ToggleLike (postId) {
   } catch (e) {
     return {
       result: false,
-      errMsg: '無法連接伺服器'
+      errMsg: 'Unable to connect to server'
     }
   }
 
@@ -59,7 +59,7 @@ async function GetDetailPostInfo (postId) {
   } catch (e) {
     return {
       result: false,
-      errMsg: '無法連接伺服器'
+      errMsg: 'Unable to connect to server'
     }
   }
 

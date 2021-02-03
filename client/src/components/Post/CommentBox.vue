@@ -8,7 +8,7 @@
         </div>
         <div class="BoxTitle">
           <span>
-            回覆給 <slot name="Title"></slot>
+            Reply to<slot name="Title"></slot>
           </span>
         </div>
       </div>
@@ -38,8 +38,8 @@
       </div>
       <div class="BoxReplyContainer">
         <div class="EditerContainer">
-          <div class="Editer" default-txt="推你的回覆" contenteditable @input="editerInputEventHandler"></div>
-          <button type="button" class="btn ReplyBtn" :disabled="!inputContent.length" @mousedown="replyBtnClickEventHandler">回覆</button>
+          <div class="Editer" default-txt="Tweet your reply" contenteditable @input="editerInputEventHandler"></div>
+          <button type="button" class="btn ReplyBtn" :disabled="!inputContent.length" @mousedown="replyBtnClickEventHandler">Reply</button>
         </div>
       </div>
     </div>
@@ -75,7 +75,7 @@ export default {
       })
 
       if (!res.result) {
-        this.errorMessage = '糟糕，發生一些錯誤 '
+        this.errorMessage = 'Oops, some errors occurred'
         return
       }
 

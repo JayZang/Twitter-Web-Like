@@ -1,6 +1,6 @@
+import userAuth from '@/API/User/Auth'
 import moment from 'moment'
 
-import userAuth from '@/API/User/Auth'
 
 const state = {
   isAuthChecked: false,
@@ -26,7 +26,7 @@ const actions = {
   regist: async ({commit}, para) => {
     if (!para.name || !para.account || !para.password || !para.password2) {
       return {
-        errMsg: '請勿空白',
+        errMsg: 'Blank space',
         result: false
       }
     }
@@ -44,7 +44,7 @@ const actions = {
   login: async ({commit}, para) => {
     if (!para.account || !para.password) {
       return {
-        errMsg: '帳號和密碼請勿空白',
+        errMsg: 'Username or password not present.',
         result: false
       }
     }

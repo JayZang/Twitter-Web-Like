@@ -16,7 +16,7 @@
             <div class="ProfileInfo">
               <div class="ProfilePosts">
                 <div class="Title">
-                  <span>推文</span>
+                  <span>Twitter</span>
                 </div>
                 <div class="Count">
                   <span>{{userPostsCount}}</span>
@@ -24,7 +24,7 @@
               </div>
               <div class="ProfileFollowing">
                 <div class="Title">
-                  <span>追蹤中</span>
+                  <span>Following</span>
                 </div>
                 <div class="Count">
                   <span>{{userFollowingCount}}</span>

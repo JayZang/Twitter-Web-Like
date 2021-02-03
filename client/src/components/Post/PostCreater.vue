@@ -3,10 +3,10 @@
     <ErrorMessageBar :text="errorMessage" v-if="errorMessage" displayTime="5000" @close="errorMessage = ''"/>
     <img :src="user.profileImg" class="UserImg">
     <div class="EditerContainer">
-      <div class="Editer" default-txt="有什麼新鮮事？" contenteditable @focus="editerFocusEventHandler" @blur="editerBlurEventHandler" @input="editerInputEventHandler">
-        有什麼新鮮事？
+      <div class="Editer" default-txt="What's new?" contenteditable @focus="editerFocusEventHandler" @blur="editerBlurEventHandler" @input="editerInputEventHandler">
+        What's new?
       </div>
-      <button type="button" class="btn PostBtn" :disabled="!inputContent.length" v-if="isEditerFocused" @mousedown="sendPostBtnClickEventHandler">發推</button>
+      <button type="button" class="btn PostBtn" :disabled="!inputContent.length" v-if="isEditerFocused" @mousedown="sendPostBtnClickEventHandler">Tweet</button>
     </div>
   </div>
 </template>

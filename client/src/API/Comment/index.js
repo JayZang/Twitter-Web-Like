@@ -1,6 +1,6 @@
-import axios from 'axios'
+import store from '@/store';
+import axios from 'axios';
 
-import store from '@/store'
 
 async function SendCommentToPost (postId, request) {
   let res;
@@ -18,7 +18,7 @@ async function SendCommentToPost (postId, request) {
   } catch (e) {
     return {
       result: false,
-      errMsg: '無法連接伺服器'
+      errMsg: 'Unable to connect to server'
     }
   }
 

@@ -7,7 +7,7 @@
             <span class="twitter-img">
               <!--<img src="/static/img/twitter-bird.png" alt="">-->
             </span>
-            <span>首頁</span>
+            <span>Home</span>
           </div>
         </router-link>
       </div>
@@ -22,7 +22,7 @@
             </router-link>
             <div class="divider"></div>
             <div class="Btns">
-              <div class="BtnItem" @click.stop="logout">登出</div>
+              <div class="BtnItem" @click.stop="logout">Logout</div>
             </div>
           </div>
         </div>

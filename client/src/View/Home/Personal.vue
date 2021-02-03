@@ -27,25 +27,25 @@
           <div class="TabContainer">
             <router-link :to="{name: 'PersonPosts', params: {PersonAccount: personAccount}}" class="TabItem" exact-active-class="active">
               <div class="TabTxt">
-                <div class="TabTitle">推文</div>
+                <div class="TabTitle">Guess </div>
                 <div class="Count">{{postsCount}}</div>
               </div>
             </router-link>
             <router-link :to="{name: 'PersonFollowing', params: {PersonAccount: personAccount}}" class="TabItem" exact-active-class="active">
               <div class="TabTxt">
-                <div class="TabTitle">正在跟隨</div>
+                <div class="TabTitle">Following</div>
                 <div class="Count">{{followingCount}}</div>
               </div>
             </router-link>
             <router-link :to="{name: 'PersonFollower', params: {PersonAccount: personAccount}}" class="TabItem" exact-active-class="active">
               <div class="TabTxt">
-                <div class="TabTitle">跟隨者</div>
+                <div class="TabTitle">Followers</div>
                 <div class="Count">{{followerCount}}</div>
               </div>
             </router-link>
             <!-- <router-link to="">
               <div class="TabTxt">
-                <div class="TabTitle">喜歡的內容</div>
+                <div class="TabTitle">Favorite content</div>
                 <div class="Count">12345</div>
               </div>
             </router-link> -->

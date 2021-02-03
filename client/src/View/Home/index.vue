@@ -15,15 +15,15 @@
         <div class="InfoContent">
           <div class="">
             <span><i class="fas fa-search"></i></span>
-            <span>跟隨你感興趣的內容。</span>
+            <span>Follow what interests you.</span>
           </div>
           <div class="">
             <span><i class="fas fa-users"></i></span>
-            <span>聽聽大家在談論什麼話題。</span>
+            <span>Listen to what topics everyone is talking about.</span>
           </div>
           <div class="">
             <span><i class="far fa-comment"></i></span>
-            <span>加入對話。</span>
+            <span>Join the conversation.</span>
           </div>
         </div>
       </div>
@@ -35,18 +35,18 @@
             <!--<img src="/static/img/twitter-bird.png" alt="">-->
           </div>
           <div class="Title">
-            看看世界上正在發生的新鮮事
+           Look at what's happening in the world 
           </div>
         </div>
         <div class="OperactionBtns">
           <div class="RegisterTitle">
-            今天就加入。
+            Join today.
           </div>
           <router-link class="btn regist" to="/regist" href="/regist">
-            註冊
+            registered
           </router-link >
           <router-link class="btn login" to="/login" href="/login">
-            登入
+            Sign in
           </router-link>
         </div>
       </div>

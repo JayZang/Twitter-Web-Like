@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from 'axios';
 
 async function login (request) {
   let res;
@@ -9,7 +9,7 @@ async function login (request) {
     return {
       res: {
         result: false,
-        errMsg: '無法連接伺服器'
+        errMsg: 'Unable to connect to server'
       },
       token: null
     }
@@ -30,7 +30,7 @@ async function regist (request) {
     return {
       res: {
         result: false,
-        errMsg: '無法連接伺服器'
+        errMsg: 'Unable to connect to server'
       },
       token: null
     }
@@ -57,7 +57,7 @@ async function checkAuth (token) {
     return {
       res: {
         result: false,
-        errMsg: '無法連接伺服器'
+        errMsg: 'Unable to connect to server'
       },
       token: null
     }

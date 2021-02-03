@@ -5,7 +5,7 @@
       <PeopleBox :personList="personList"/>
     </div>
     <div class="NonPerson" v-if="!personList.length">
-      <div class="txt">尚無追蹤者</div>
+      <div class="txt">No followers yet</div>
     </div>
   </div>
 </template>

@@ -3,7 +3,7 @@
     <div class="HeadContainer">
       <div class="Content">
         <div class="Txt">
-          推文
+          Twitter
         </div>
       </div>
     </div>

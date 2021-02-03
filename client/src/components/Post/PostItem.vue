@@ -69,7 +69,7 @@ export default {
       return !!this.detailPostRouteName ? this.detailPostRouteName : 'PersonDetailPostInfo'
     },
     RegPostDate: function () {
-      return date => moment(date).format('YYYY年M月D日')
+      return date => moment(date).format('YYYYYear M Month D')
     },
     likesCount: function () {
       return this.likes.length

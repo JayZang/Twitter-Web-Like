@@ -1,6 +1,5 @@
-import axios from 'axios'
-
 import store from '@/store'
+import axios from 'axios'
 
 async function GetPersonBasicInfo (personId) {
   let res
@@ -17,7 +16,7 @@ async function GetPersonBasicInfo (personId) {
   } catch (e) {
     return {
       result: false,
-      errMsg: '無法連接伺服器'
+      errMsg: 'Unable to connect to server'
     }
   }
 
@@ -39,7 +38,7 @@ async function GetPersonFollowingInfo (personId) {
   } catch (e) {
     return {
       result: false,
-      errMsg: '無法連接伺服器'
+      errMsg: 'Unable to connect to server'
     }
   }
 
@@ -61,7 +60,7 @@ async function GetPersonFollowerInfo (personId) {
   } catch (e) {
     return {
       result: false,
-      errMsg: '無法連接伺服器'
+      errMsg: 'Unable to connect to server'
     }
   }
 
@@ -83,7 +82,7 @@ async function GetPersonPosts (personId) {
   } catch (e) {
     return {
       result: false,
-      errMsg: '無法連接伺服器'
+      errMsg: 'Unable to connect to server'
     }
   }
 

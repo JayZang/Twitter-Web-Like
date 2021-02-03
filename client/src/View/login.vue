@@ -3,29 +3,29 @@
     <div class="LoginFormContainer">
       <div class="Wrapper">
         <div class="LoginText">
-          <span>登入</span>
+          <span>Entry</span>
         </div>
         <div class="ErrHint alert alert-danger" v-if="errHint">
           {{ errHint }}
         </div>
         <div class="LoginInput">
           <div class="account">
-            <input type="text" v-model="account" placeholder="帳號">
+            <input type="text" v-model="account" placeholder="account">
           </div>
           <div class="password">
-            <input type="password" v-model="password" placeholder="密碼">
+            <input type="password" v-model="password" placeholder="password">
           </div>
         </div>
         <div class="Submit">
-          <button class="btn submit" type="button" @click="loginEventHandeler">登入</button>
+          <button class="btn submit" type="button" @click="loginEventHandeler">Login</button>
         </div>
       </div>
     </div>
     <div class="RegistHint">
       <div class="Wrapper">
         <div class="hint">
-          <span>新加入 ?</span>
-          <router-link to="/regist">立即加入 »</router-link>
+          <span>New member ?</span>
+          <router-link to="/regist">Join now»</router-link>
         </div>
       </div>
     </div>
